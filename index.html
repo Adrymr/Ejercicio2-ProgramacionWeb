@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 | Programación Web</title>
+    <link rel="stylesheet" href="http://localhost/ejercicio2/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h2>Sistema de carga de nota de alumnos</h2>
+
+    <div class="div">
+        <div class="main-div">
+            <div class="form-cont">
+                <form action="estudiantesOp.php" method="post">
+                    <label for="txtNombre" class="etiqueta">Ingrese el nombre y apellido del estudiante:</label><br>
+                    <input type="text" name="txtNombre" id="nombre" required><br>
+            
+                    <label for="txtCedula" class="etiqueta">Ingrese el Nro de cedula del estudiante</label><br>
+                    <input type="text" name="txtCedula" id="cedula" minlength="7" maxlength="9" required><br>
+    
+                    <hr>
+    
+                    <label for="txtNotaMatematica" class="etiqueta">Nota de Matematica</label><br>
+                    <input type="number" name="txtNotaMatematica" id="notaMatematica" min="1" max="20" required><br>
+    
+    
+                    <label for="txtNotaFisica" class="etiqueta">Nota de Fisica</label><br>
+                    <input type="number" name="txtNotaFisica" id="notaFisica" min="1" max="20" required><br>
+    
+                    <label for="txtNotaProgramación" class="etiqueta">Nota de Programación</label><br>
+                    <input type="number" name="txtNotaProgramacion" id="notaProgramacion" min="1" max="20" required><br>
+                    
+                    <div class="btn-cont">
+                        <input type="submit" name="btn" value="Registrar" class="btn-registrar" onclick="alert('Registro creado con exito!')">
+                    </div>
+            
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
